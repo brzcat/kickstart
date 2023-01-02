@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "compile": "node ethereum/compile.js"
+    "compile": "node ethereum/compile.js",
+    "deploy": "node ethereum/deploy.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^1.5.1",
+    "@truffle/hdwallet-provider": "^1.7.0",
     "dotenv": "^16.0.3",
     "fs-extra": "^10.0.0",
     "ganache-cli": "^6.12.2",
