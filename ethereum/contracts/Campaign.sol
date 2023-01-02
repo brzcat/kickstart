@@ -34,9 +34,10 @@ contract Campaign {
         _;
     }
 
-    function Campaign(uint minimum, address creator) public {
-        manager = creator;
+    constructor(uint minimum, address creator) public {
+        manager =creator;
         minimumContribution = minimum;
+        approversCount=0;
     }
 
     function contribute() public payable {
